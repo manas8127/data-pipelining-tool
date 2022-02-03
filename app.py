@@ -10,7 +10,7 @@ import sqlalchemy
 sc = SparkContext.getOrCreate()
 spark = SparkSession(sc)
 
-st.title("Hyper-MAX Data Automation Tool")
+st.markdown("<h1 style='text-align: center; color: white;'>Data Pipelining Tool</h1>", unsafe_allow_html=True)
 
 @st.cache 
 def pipeline(file_loca, file_type):
